@@ -1,14 +1,39 @@
 $(document).ready(function () {
-    $('#submit-btn').click(function (e) {
+    $('#contact-form').submit(function (e) {
         e.preventDefault(); // Evita el envío del formulario por defecto
 
-        var form = $('#contact-form');
+        var nombre = $('#nombre').val();
+        var correo = $('#correo').val();
+        var telefono = $('#telefono').val();
+        var expresion = /\w+@\w+\.+[a-z]/;
+
+        if (nombre === "" || correo === "" || telefono === "") {
+            alert("Todos los campos son obligatorios");
+            return false;
+        } else if (nombre.length > 30) {
+            alert("El nombre es muy largo");
+            return false;
+        } else if (correo.length > 100) {
+            alert("El correo es muy largo");
+            return false;
+        } else if (!expresion.test(correo)) {
+            alert("El correo no es válido");
+            return false;
+        } else if (telefono.length > 10) {
+            alert("El teléfono es muy largo");
+            return false;
+        } else if (isNaN(telefono)) {
+            alert("El teléfono ingresado no es un número");
+            return false;
+        }
+
+        var form = $(this);
         var formData = form.serialize(); // Serializa los datos del formulario
 
         $.ajax({
             type: 'POST',
             url: form.attr('action'),
-            data: formData
+            data: formData,
         })
             .done(function (response) {
                 // Mostrar mensaje de éxito

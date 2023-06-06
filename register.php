@@ -25,7 +25,6 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="validar.js"></script> -->
     <script src="submit.js"></script>
 </head>
 
@@ -106,13 +105,14 @@
                     <label for="phone">WhatsApp</label>
                     <input type="text" class="form-control" id="telefono" name="phone" placeholder="WhatsApp" required>
                 </div>
-                <button type="button" id="submit-btn">Enviar</button>
+                <button type="submit" id="submit-btn">Send</button>
                 <div class="spacer-10 text-center">
                     <small>Your email is safe with us. We don't spam.</small>
                 </div>
             </form>
         </div>
     </div>
+
 
     <footer>
         <div class="footer-container">
@@ -144,8 +144,6 @@
     <script src="js/jquery.smartsticky.min.js"></script>
     <script src="js/designesia.js"></script>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    <!-- <script src="form.js"></script> -->
-    <!-- <script src="validar.js"></script> -->
     <script src="submit.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
