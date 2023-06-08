@@ -87,6 +87,7 @@
 
 
     <!-- Contact-us -->
+
     <div class="contact-content">
         <div class="contact-header">
             <h4 class="contact-title" id="contact-section">Thanks for registering</h4>
