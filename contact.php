@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $to = "register@anomalyfestival.com"; // correo electrónico de administrador
+    $to = "andricktakizawa@gmail.com"; // correo electrónico de administrador
     $subject = "Mensaje de contacto";
     $name = $_POST['Name'];
     $email = $_POST['email'];

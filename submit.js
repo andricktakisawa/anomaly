@@ -37,7 +37,7 @@ $(document).ready(function () {
         })
             .done(function (response) {
                 // Mostrar mensaje de éxito
-                const exito = $('<p>').text('El mensaje se envió correctamente');
+                const exito = $('<p>').text('The message has been sent correctly');
                 exito.addClass('exito');
                 form.append(exito);
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
             })
             .fail(function () {
                 // Mostrar mensaje de error
-                const error = $('<p>').text('Ocurrió un error al enviar el mensaje');
+                const error = $('<p>').text('An error occurred while sending the message');
                 error.addClass('error');
                 form.append(error);
 
