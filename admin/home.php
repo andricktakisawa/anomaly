@@ -30,6 +30,7 @@ if ($email != false && $password != false) {
 } else {
     header('Location: login-user.php');
 }
+mysqli_query($con, "SET NAMES 'utf8'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -185,7 +186,7 @@ if ($email != false && $password != false) {
                     if ($result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr class='data-table-row'>";
-                            echo "<td class='data-table-cell'>" . $row['nombre'] . "</td>";
+                            echo "<td class='data-table-cell'>" . utf8_encode($row['nombre']) . "</td>";
                             echo "<td class='data-table-cell'>" . $row['email'] . "</td>";
                             echo "<td class='data-table-cell'>" . $row['telefono'] . "</td>";
                             echo "<td class='data-table-cell'><i class='fas fa-clipboard copy-icon'></i></td>";
