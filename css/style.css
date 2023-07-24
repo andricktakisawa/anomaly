@@ -57,6 +57,8 @@ html {
     padding: 0;
     margin: 0;
     background: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16371,5 +16373,37 @@ footer {
 @media (max-width: 768px) {
     .carousel-item {
         height: 50vh;
+    }
+}
+
+.swiper {
+    width: 100%;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+div .swiper-button {
+    width: 44px;
+    height: 44px;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper {
+        width: 80%;
+        margin: 75px auto;
     }
 }
