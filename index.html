@@ -74,42 +74,90 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/slider/1.png" alt="Anomaly Slider">
+                    <img src="images/slider/1.jpg" alt="Anomaly Slider">
+                    <div class="text-container">
+                        <p class="slider-text-1">Anomaly es una
+                            plataforma de difusión de
+                            la cultura
+                            electrónica
+                            de
+                            avanzada que se ha
+                            posicionado como una de las
+                            opciones más confiables con relación a la promoción de eventos y artistas de culto en la
+                            escena global, habiendo
+                            presentado en nuestro país proyectos como: Planetary Assault Systems, Dopplereffekt,
+                            Schwefelwelb, Anthony Rother y Lady
+                            Starlight, por mencionar sólo algunos.</p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="images/slider/2.png" alt="Anomaly Slider">
+                    <img src="images/slider/2.jpg" alt="Anomaly Slider">
+                    <div class="text-container">
+                        <p class="slider-text-2">El próximo 19 de
+                            agosto Anomaly celebra el
+                            primer
+                            aniversario
+                            de BLCKSRS, un serial de eventos
+                            enfocados en presentar
+                            una curaduría especializada, teniendo como estandartes principales, que los artistas
+                            invitados
+                            sean primicia en nuestro
+                            país y darles prioridad a los actos en vivo.</p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="images/slider/3.png" alt="Anomaly Slider">
+                    <img src="images/slider/3.jpg" alt="Anomaly Slider">
+                    <div class="text-container">
+                        <p class="slider-text-3">El concepto de BLCKSRS
+                            para este año gira
+                            entorno a la
+                            narrativa idílica de La Divina Comedia
+                            planteada por Dante, que
+                            en la primera parte de su contenido nos cuenta su travesía por los diferentes círculos del
+                            inframundo guiado por
+                            Virgilio.
+                            <br>
+                            Una noche que estará musicalizada y teatralizada bajo una temática sobre el exceso y deseos
+                            carnales que todo ser humano
+                            experimenta durante su existencia, invitando al espectador y dejarse perder en la obscuridad
+                            de su propio ser.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="images/slider/4.png" alt="Anomaly Slider">
+                    <img src="images/slider/4.jpg" alt="Anomaly Slider">
+                    <div class="text-container">
+                        <p class="slider-text-4">Para
+                            lograr que la
+                            densidad de la noche atrape a los invitados,
+                            nuestros artistas presentarán
+                            una selección musical que
+                            oscilará por los géneros oscuros del Electro y Electronic Body Music, para fusionarse con el
+                            Industrial más transgresivo
+                            de la década de los años noventa.</p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="images/slider/5.png" alt="Anomaly Slider">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/slider/6.png" alt="Anomaly Slider">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/slider/7.png" alt="Anomaly Slider">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/slider/8.png" alt="Anomaly Slider">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/slider/9.png" alt="Anomaly Slider">
+                    <img src="images/slider/5.jpg" alt="Anomaly Slider">
+                    <div class="text-container">
+                        <p class="slider-text-5">
+                            La presentación en México del live act FM es en sí mismo un hecho tanto inusual como
+                            trascendente, pues será la primera
+                            ocasión que un performance de este nivel se presente en LATAM.
+                            Fixmer / McCarthy es el live act formado por Douglas McCarthy, líder y vocalista de la
+                            legendaria banda NITZER EBB y el
+                            actual residente de Berghain Terence Fixmer, un proyecto de culto que rápidamente se ganó el
+                            respeto en la escena global
+                            por su forma única de crear una fusión de forma elegante y seductora del Techno más potente
+                            y el Electro más fino.
+                        </p>
+                    </div>
                 </div>
             </div>
-
             <div class="swiper-button swiper-button-prev"></div>
             <div class="swiper-button swiper-button-next"></div>
         </div>
@@ -169,8 +217,11 @@
                 autoplay: {
                     delay: 5000,
                 },
-                effect: "coverflow",
-                grabCursor: true,
+                effect: {
+                    fade: {
+                        crossFade: true,
+                    },
+                }
             });
         });
 

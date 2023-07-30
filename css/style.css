@@ -14722,7 +14722,7 @@ a.btn-slider:hover {
     margin: 0 6px;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .testi-slider .flex-control-paging li a {
@@ -16379,9 +16379,16 @@ footer {
     overflow: hidden;
 }
 
+.swiper-slide {
+    position: relative;
+}
+
 .swiper-slide img {
     width: 100%;
     height: auto;
+    background-color: #000;
+    opacity: 0.5;
+    filter: blur(0.5);
 }
 
 div .swiper-button {
@@ -16396,6 +16403,12 @@ div .swiper-button {
     z-index: 10;
     cursor: pointer;
     color: #fff;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -16453,5 +16466,85 @@ div .swiper-button {
 
     100% {
         transform: scale(1);
+    }
+}
+
+.text-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.text-container p {
+    text-align: justify;
+}
+
+div .swiper-button {
+    padding-bottom: 150px;
+    opacity: 0.7;
+}
+
+div .slider-text-1,
+.slider-text-2,
+.slider-text-3,
+.slider-text-4,
+.slider-text-5 {
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        width: 990px;
+        height: 550px;
+    }
+
+    .text-container p {
+        margin: 0;
+        font-weight: 600;
+        text-align: justify;
+        text-shadow:
+            1px 1px 2px #e50000,
+            0 0 1em #e50000,
+            0 0 0.2em #e50000;
+    }
+
+    div .slider-text-1 {
+        padding: 150px 0 0 380px;
+        font-size: 20px;
+    }
+
+    div .slider-text-2 {
+        padding: 250px 0 0 350px;
+        font-size: 20px;
+    }
+
+    div .slider-text-3 {
+        padding: 310px 0 0;
+        font-size: 20px;
+    }
+
+    div .slider-text-4 {
+        padding-bottom: 250px;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 21px;
+    }
+
+    div .slider-text-5 {
+        padding-top: 330px;
+        padding-right: 430px;
+        font-size: 15px;
+    }
+
+    div .swiper-button {
+        padding-bottom: 0;
+        opacity: 1;
     }
 }

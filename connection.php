@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '', 'login');
+$con = mysqli_connect('localhost', 'anomalyf_root', 'jtTurTY#k}]S', 'anomalyf_login');
 /*
 
    _ \    _ \ \ \        /  ____|   _ \   ____|  __ \       __ ) \ \   /     _ _|   \  |   ___|   _ \ __ __|  ____| 
